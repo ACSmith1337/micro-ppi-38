@@ -163,6 +163,12 @@ Requests occur at boot and after latitude, longitude, or range changes. Failed r
 - **Static grid redraw:** throttled to reduce ESP8266 workload
 - **Firmware artifact:** `bin/firmware.bin`
 
+## 3D-Printed Case
+
+A parametric OpenSCAD enclosure inspired by LEGO part 3039px5 is included in [`case/micro_ppi_case.scad`](case/micro_ppi_case.scad). It uses the measured 35 mm GC9A01 glass, places two buttons below the raised `38` badge, retains the NodeMCU without screws, and provides rear USB access.
+
+Measure the actual GC9A01 PCB diameter and update `pcb_d` before printing. Module PCB dimensions vary. See [`case/README.md`](case/README.md) for the prototype workflow.
+
 ## Troubleshooting
 
 - Blank display: verify GC9A01 power, ground, SPI, DC, CS, and reset wiring.
